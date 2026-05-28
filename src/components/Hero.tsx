@@ -23,7 +23,7 @@ export default function Hero() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
           </span>
-          Hand-Picked Premium Freelancers — Verified Performance ✅
+          Hand-Picked Elite Freelancers — Verified and Audited ✅
         </motion.div>
 
         {/* Hero Headline */}
@@ -34,8 +34,8 @@ export default function Hero() {
           className="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight tracking-tight mb-6"
         >
           Top Tier Freelancing Experts <br />
-          <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-500 bg-clip-text text-transparent">
-            On-Demand Without The Noise
+          <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-teal-400 bg-clip-text text-transparent drop-shadow-[0_2px_15px_rgba(52,211,153,0.3)]">
+            On-Demand at Freelancer Hub
           </span>
         </motion.h1>
 
@@ -46,8 +46,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed font-normal"
         >
-          We source, interview, and match individual industry high-performers directly from Fiverr. 
-          Review transparent operational data metrics and scale your vision securely.
+          We source, interview, and catalog individual industry high-performers directly from Fiverr. 
+          Compare transparent operational ratings, test delivery times, and secure your transactions risk-free.
         </motion.p>
 
         {/* CTA Buttons */}

@@ -25,22 +25,22 @@ export default function Footer({ categories, onSelectCategory }: FooterProps) {
           
           {/* Brand Col */}
           <div className="flex flex-col gap-5">
-            <a href="#" className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-500 to-emerald-400 flex items-center justify-center text-slate-950 shadow-sm shadow-emerald-500/20">
-                <Sparkles className="w-4.5 h-4.5" fill="currentColor" />
+            <a href="#" className="flex items-center gap-2.5 group">
+              <div className="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400 shadow-md shadow-emerald-500/10 group-hover:border-emerald-500/30 transition-all duration-300">
+                <Sparkles className="w-5 h-5" fill="currentColor" />
               </div>
-              <span className="text-lg font-black text-white tracking-tight">
-                Skill<span className="text-emerald-400 font-extrabold italic">Hub</span>
+              <span className="text-lg font-black tracking-tight text-white">
+                Freelancer<span className="text-emerald-400 italic font-black drop-shadow-[0_0_8px_rgba(52,211,153,0.45)]">Hub</span><span className="text-xs font-mono font-bold text-emerald-500">.com</span>
               </span>
             </a>
             
             <p className="text-slate-500 text-xs sm:text-sm leading-relaxed">
-              Aggregating elite, audited professional service contractors within unified landing pipelines.
+              Aggregating and verifying elite professional freelancers from around the globe under premium, high-integrity talent pipelines.
             </p>
             
             {/* Social Indicators */}
             <div className="flex gap-2">
-              <a href="mailto:info@skillhub.com" className="w-9 h-9 rounded-lg bg-slate-900 border border-slate-850 flex items-center justify-center text-slate-500 hover:text-emerald-400 hover:border-emerald-500/30 transition-all">
+              <a href="mailto:info@freelancerhub.com" className="w-9 h-9 rounded-lg bg-slate-900 border border-slate-850 flex items-center justify-center text-slate-500 hover:text-emerald-400 hover:border-emerald-500/30 transition-all">
                 <Mail className="w-4 h-4" />
               </a>
               <a href="#" className="w-9 h-9 rounded-lg bg-slate-900 border border-slate-850 flex items-center justify-center text-slate-500 hover:text-emerald-400 hover:border-emerald-500/30 transition-all">
@@ -165,7 +165,7 @@ export default function Footer({ categories, onSelectCategory }: FooterProps) {
 
         {/* Brand Copyright */}
         <div className="border-t border-slate-900/40 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-medium text-slate-600">
-          <p>&copy; 2026 SkillHub. Corporate Standards Retained.</p>
+          <p>&copy; 2026 Freelancer Hub. All Rights Reserved.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-slate-400 transition-colors">Privacy Statement</a>
             <a href="#" className="hover:text-slate-400 transition-colors">Cookie Policy</a>

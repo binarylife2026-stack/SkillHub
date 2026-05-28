@@ -35,14 +35,29 @@ export default function Navbar({ isAdmin, onLogout, onOpenLogin, onLogoClick }: 
             e.preventDefault();
             if (onLogoClick) onLogoClick();
           }}
-          className="flex items-center gap-3 group text-left cursor-pointer transition-transform"
+          className="flex items-center gap-3.5 group text-left cursor-pointer transition-transform duration-300"
+          id="navbar-logo-btn"
         >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-emerald-400 flex items-center justify-center text-slate-950 shadow-md shadow-emerald-500/20 group-hover:scale-105 transition-transform duration-200">
-            <Sparkles className="w-5 h-5" fill="currentColor" />
+          <div className="relative w-11 h-11 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center shadow-lg group-hover:border-emerald-500/40 transition-all duration-300 overflow-hidden">
+            {/* Spinning/pulsing neon background aura */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/10 via-teal-400/20 to-emerald-400/10 opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" />
+            
+            {/* Glowing particle effect in BG */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-400 rounded-2xl blur-md opacity-25 group-hover:opacity-50 transition-all duration-300" />
+            
+            <div className="relative w-8 h-8 rounded-xl bg-gradient-to-b from-slate-950 to-slate-900 border border-slate-800/80 flex items-center justify-center text-emerald-400 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] group-hover:text-emerald-300 transition-all">
+              <Sparkles className="w-4 h-4 animate-pulse" fill="currentColor" />
+            </div>
           </div>
-          <span className="text-xl font-black text-white tracking-tight">
-            Skill<span className="text-emerald-400 font-extrabold italic">Hub</span>
-          </span>
+          <div className="flex flex-col">
+            <span className="text-lg font-black tracking-tight text-white flex items-center gap-1 leading-none">
+              <span className="text-white">Freelancer</span>
+              <span className="text-emerald-400 italic font-black drop-shadow-[0_0_8px_rgba(52,211,153,0.45)]">Hub</span>
+            </span>
+            <span className="text-[9px] font-mono font-black tracking-widest text-emerald-400 leading-none mt-1 uppercase">
+              Affiliate Directory
+            </span>
+          </div>
         </button>
 
         {/* Desktop Navigation Links */}

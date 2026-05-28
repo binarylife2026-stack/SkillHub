@@ -114,8 +114,11 @@ export default function CategoryPage({
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3 }}
                   key={s.id}
-                  className="group relative flex flex-col bg-slate-900/30 border border-slate-850 hover:border-slate-750 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 hover:shadow-emerald-550/5 hover:-translate-y-1"
+                  className="group relative flex flex-col bg-gradient-to-b from-slate-900/50 to-slate-950/20 border border-slate-850 hover:border-emerald-500/30 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(16,185,129,0.06)] hover:-translate-y-1.5"
                 >
+                  {/* Glowing top line accent on group hover */}
+                  <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-emerald-500/0 via-emerald-400 to-teal-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+
                   {/* Verified Fiverr badge Tag */}
                   <div className="absolute top-4 right-4 z-10 flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-black uppercase tracking-wider">
                     <ShieldCheck className="w-3 h-3" />

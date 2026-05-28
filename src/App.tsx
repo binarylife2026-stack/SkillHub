@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { DEFAULT_CATEGORIES, DEFAULT_SELLERS } from './data';
 import { Category, Seller } from './types';
 import { CheckCircle, AlertCircle, Info, X } from 'lucide-react';
@@ -209,8 +209,20 @@ export default function App() {
     }
   };
 
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const parent = e.currentTarget;
+    const rect = parent.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    parent.style.setProperty('--mouse-x', `${x}px`);
+    parent.style.setProperty('--mouse-y', `${y}px`);
+  };
+
   return (
-    <div className="min-h-screen bg-slate-950 font-sans antialiased text-slate-100 selection:bg-emerald-500/20 selection:text-emerald-400">
+    <div 
+      onMouseMove={handleMouseMove}
+      className="min-h-screen bg-slate-950 font-sans antialiased text-slate-100 selection:bg-emerald-500/20 selection:text-emerald-400 spotlight-wrapper"
+    >
       
       {/* 1. Nav Bar layout with dynamic reset-to-home support */}
       <Navbar

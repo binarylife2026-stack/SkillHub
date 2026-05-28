@@ -28,7 +28,7 @@ export const DEFAULT_SELLERS: Seller[] = [
     desc: "Professional web designer with 5+ years experience in creating stunning, conversion-focused websites.",
     img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200",
     skills: ["WordPress", "React", "Figma", "Responsive"],
-    link: "https://www.fiverr.com/?utm_source=skillhub"
+    link: "https://www.fiverr.com/?utm_source=freelancerhub"
   },
   {
     id: "s2",
@@ -45,7 +45,7 @@ export const DEFAULT_SELLERS: Seller[] = [
     desc: "Award-winning graphic designer specializing in brand identity, logo design, and visual storytelling.",
     img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200",
     skills: ["Logo", "Branding", "Illustrator", "Photoshop"],
-    link: "https://www.fiverr.com/?utm_source=skillhub"
+    link: "https://www.fiverr.com/?utm_source=freelancerhub"
   },
   {
     id: "s3",
@@ -62,7 +62,7 @@ export const DEFAULT_SELLERS: Seller[] = [
     desc: "SEO expert with proven results. Helped 300+ businesses rank on Google's first page.",
     img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200",
     skills: ["On-page SEO", "Technical SEO", "Backlinks"],
-    link: "https://www.fiverr.com/?utm_source=skillhub"
+    link: "https://www.fiverr.com/?utm_source=freelancerhub"
   },
   {
     id: "s4",
@@ -79,7 +79,7 @@ export const DEFAULT_SELLERS: Seller[] = [
     desc: "Creative video editor specializing in YouTube content, social media reels, and cinematic storytelling.",
     img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200",
     skills: ["Premiere Pro", "After Effects", "Motion Graphics"],
-    link: "https://www.fiverr.com/?utm_source=skillhub"
+    link: "https://www.fiverr.com/?utm_source=freelancerhub"
   },
   {
     id: "s5",
@@ -96,7 +96,7 @@ export const DEFAULT_SELLERS: Seller[] = [
     desc: "Senior mobile application architect with robust proficiency in cross-platform mobile ecosystem.",
     img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
     skills: ["Flutter", "Dart", "Firebase", "API Integration"],
-    link: "https://www.fiverr.com/?utm_source=skillhub"
+    link: "https://www.fiverr.com/?utm_source=freelancerhub"
   },
   {
     id: "s6",
@@ -113,7 +113,7 @@ export const DEFAULT_SELLERS: Seller[] = [
     desc: "Expert content writer focused on high ranking articles, blogs, copywriting, brand voice research.",
     img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200",
     skills: ["Copywriting", "SEO Writing", "Blog Posts", "Editing"],
-    link: "https://www.fiverr.com/?utm_source=skillhub"
+    link: "https://www.fiverr.com/?utm_source=freelancerhub"
   },
   {
     id: "s7",
@@ -130,7 +130,7 @@ export const DEFAULT_SELLERS: Seller[] = [
     desc: "Digital marketer certified in Facebook, Instagram, LinkedIn campaigns and organic branding strategies.",
     img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200",
     skills: ["Meta Ads", "Instagram Growth", "Content Calendar", "Analytics"],
-    link: "https://www.fiverr.com/?utm_source=skillhub"
+    link: "https://www.fiverr.com/?utm_source=freelancerhub"
   },
   {
     id: "s8",
@@ -147,7 +147,7 @@ export const DEFAULT_SELLERS: Seller[] = [
     desc: "Stellar visual designer constructing user centered mockups, high-fidelity wireframes, interactive dynamic prototypes.",
     img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200",
     skills: ["Figma UI", "Mobile UX", "Wireframes", "Design Systems"],
-    link: "https://www.fiverr.com/?utm_source=skillhub"
+    link: "https://www.fiverr.com/?utm_source=freelancerhub"
   },
   {
     id: "s9",
@@ -164,7 +164,7 @@ export const DEFAULT_SELLERS: Seller[] = [
     desc: "Front-end engineer building high performance web applications with modern modular architectures.",
     img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200",
     skills: ["ReactJS", "NextJS", "TailwindCSS", "TypeScript"],
-    link: "https://www.fiverr.com/?utm_source=skillhub"
+    link: "https://www.fiverr.com/?utm_source=freelancerhub"
   },
   {
     id: "s10",
@@ -181,7 +181,7 @@ export const DEFAULT_SELLERS: Seller[] = [
     desc: "Clean geometry & typography focused logo artist providing multiple initial iterations and lifetime support.",
     img: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&q=80&w=200",
     skills: ["Minimal Logo", "Vector Graphics", "Brand Style Guide"],
-    link: "https://www.fiverr.com/?utm_source=skillhub"
+    link: "https://www.fiverr.com/?utm_source=freelancerhub"
   },
   {
     id: "s11",
@@ -198,7 +198,7 @@ export const DEFAULT_SELLERS: Seller[] = [
     desc: "SEO Auditor extracting profitable search intents to guide content maps and link-building campaigns.",
     img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200",
     skills: ["Ahrefs", "Semrush", "Keyword Mapping", "Competitor Audit"],
-    link: "https://www.fiverr.com/?utm_source=skillhub"
+    link: "https://www.fiverr.com/?utm_source=freelancerhub"
   },
   {
     id: "s12",
@@ -215,7 +215,7 @@ export const DEFAULT_SELLERS: Seller[] = [
     desc: "Visual media editing specialist generating premium commercials with sound design and color grading.",
     img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=200",
     skills: ["DaVinci Resolve", "Color Grading", "Cinematic Ads", "Sound SFX"],
-    link: "https://www.fiverr.com/?utm_source=skillhub"
+    link: "https://www.fiverr.com/?utm_source=freelancerhub"
   },
   {
     id: "s13",
@@ -232,7 +232,7 @@ export const DEFAULT_SELLERS: Seller[] = [
     desc: "Full-stack developer architecting database integrations and highly secured web microservices.",
     img: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=200",
     skills: ["NodeJS", "ExpressJS", "MongoDB", "PostgreSQL"],
-    link: "https://www.fiverr.com/?utm_source=skillhub"
+    link: "https://www.fiverr.com/?utm_source=freelancerhub"
   },
   {
     id: "s14",
@@ -249,7 +249,7 @@ export const DEFAULT_SELLERS: Seller[] = [
     desc: "Digital copywriting specialist crafting posts that convert viewers into loyal premium clients.",
     img: "https://images.unsplash.com/photo-1554151228-14d9def656e4?auto=format&fit=crop&q=80&w=200",
     skills: ["Social Copy", "Ad Copywriter", "Sales Hooks", "Branding"],
-    link: "https://www.fiverr.com/?utm_source=skillhub"
+    link: "https://www.fiverr.com/?utm_source=freelancerhub"
   },
   {
     id: "s15",
@@ -266,6 +266,6 @@ export const DEFAULT_SELLERS: Seller[] = [
     desc: "Interactive visual designer building desktop and mobile user experience pathways.",
     img: "https://images.unsplash.com/photo-1542206395-9feb3edaa68d?auto=format&fit=crop&q=80&w=200",
     skills: ["Landing Page", "UX Research", "UI Wireframes", "Figma"],
-    link: "https://www.fiverr.com/?utm_source=skillhub"
+    link: "https://www.fiverr.com/?utm_source=freelancerhub"
   }
 ];
