@@ -55,7 +55,50 @@ export default function App() {
     }
   });
 
-  const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const [selectedCategory, setSelectedCategory] = useState<string>(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('category') || 'all';
+    } catch {
+      return 'all';
+    }
+  });
+
+  // Synchronize category state changes back to the browser's URL query string
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const urlCategory = params.get('category') || 'all';
+      if (urlCategory !== selectedCategory) {
+        if (selectedCategory === 'all') {
+          params.delete('category');
+        } else {
+          params.set('category', selectedCategory);
+        }
+        const search = params.toString();
+        const newUrl = window.location.pathname + (search ? `?${search}` : '');
+        window.history.pushState({ category: selectedCategory }, '', newUrl);
+      }
+    } catch (e) {
+      console.error('Failed to change URL dynamic parameters:', e);
+    }
+  }, [selectedCategory]);
+
+  // Synchronize browser forward and backward actions (popstate) back to React state Channel
+  useEffect(() => {
+    const handlePopState = () => {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const cat = params.get('category') || 'all';
+        setSelectedCategory(cat);
+      } catch (e) {
+        console.error('Error handling popstate category:', e);
+      }
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
   const [isAdmin, setIsAdmin] = useState<boolean>(() => {
     // Check session safety
     const stored = sessionStorage.getItem('sh_admin_session');
