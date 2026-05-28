@@ -1,0 +1,6 @@
+{
+  "name": "SkillHub",
+  "description": "Premium vetted freelance catalog platform connecting businesses with verified Fiverr top-rated performers instantly.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
